@@ -36,7 +36,7 @@ this.getUserLocation();
   getUserLocation() {
     navigator.geolocation.getCurrentPosition(position => {
       this.latLng.lat = position.coords.latitude;
-
+      
       this.latLng.lng = position.coords.longitude;
 
     

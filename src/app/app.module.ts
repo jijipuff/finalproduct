@@ -4,18 +4,24 @@ import { IonicApp, IonicErrorHandler, IonicModule } from "ionic-angular";
 import { SplashScreen } from "@ionic-native/splash-screen";
 import { StatusBar } from "@ionic-native/status-bar";
 import { MyApp } from "./app.component";
+
 import { HomePage } from "../pages/home/home";
-import { RegistrationPage } from "../pages/registration/registration";
 import { LoginPage } from "../pages/login/login";
 import { LandingPage } from "../pages/landing/landing";
 import { BingMapsLoader } from "../providers/bing-maps/bing-map.service";
 import { MapPage } from "../pages/map/map";
 import { PaymentPage } from "../pages/payment/payment";
-import { ComponentsModule } from "../components/components.module";
+import { ComponentsModule } from "../components/map/components.module";
 import { TimerPage } from "../pages/timer/timer";
 
 
 import { HttpModule } from "@angular/http";
+import { RegistrationPage } from "../pages/registration/registration";
+import { WinPage } from "../pages/win/win";
+import { Game1Page } from "../pages/game1/game1";
+import { Game2Page } from "../pages/game2/game2";
+import { Game3Page } from "../pages/game3/game3";
+import { Game4Page } from "../pages/game4/game4";
 
 // import {
 //   MapModule,
@@ -31,12 +37,17 @@ import { HttpModule } from "@angular/http";
   declarations: [
     MyApp, 
     HomePage, 
-    RegistrationPage, 
+    RegistrationPage,
     LoginPage, 
     LandingPage, 
     MapPage,
     PaymentPage,
     TimerPage,
+    WinPage,
+    Game1Page,
+    Game2Page,
+    Game3Page,
+    Game4Page
   ],
 
   imports: [
@@ -64,6 +75,11 @@ import { HttpModule } from "@angular/http";
     LandingPage,
     MapPage, 
     PaymentPage,
+    WinPage,
+    Game1Page,
+    Game2Page,
+    Game3Page,
+    Game4Page
   ],
 
   providers: [

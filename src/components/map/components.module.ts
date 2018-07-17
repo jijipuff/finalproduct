@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { MapComponent } from './map/map.component';
+import { MapComponent } from './map.component';
 import { MapModule, MapAPILoader, BingMapAPILoaderConfig, BingMapAPILoader, WindowRef, DocumentRef } from "angular-maps";
 @NgModule({
 	declarations: [MapComponent],

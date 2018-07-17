@@ -1,9 +1,7 @@
 import { Component} from '@angular/core';
 import { NavController } from 'ionic-angular';
-
-import { RegistrationPage } from '../registration/registration';
+import {RegistrationPage } from '../registration/registration';
 import { LoginPage } from '../login/login';
-import { PaymentPage } from '../payment/payment';
 
 
 @Component({
@@ -23,10 +21,5 @@ export class HomePage {
     console.log("Navigating...");
 
     this.navCtrl.push(LoginPage)
-  }
-  navigateToPayment() {
-    console.log("Navigating...");
-
-    this.navCtrl.push(PaymentPage)
   }
 }
